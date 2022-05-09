@@ -7,10 +7,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
     <!-- css slick files  -->
-    <link rel="stylesheet" href="./vendor/cssPlugin/slick-thems.css">
-    <link rel="stylesheet" href="./vendor/cssPlugin/slick.css">
+    <!-- <link rel="stylesheet" href="./dist/vendore/cssPlugins/slick-theme.css">
+    <link rel="stylesheet" href="./dist/vendore/cssPlugins/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css file -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
     <title>Lavana</title>
     </head>
   <body>
@@ -20,14 +22,14 @@
         <div class="row">
             <div class="col-md-2 d-flex">
                 <div class="logo">
-                  <a href="./index.html"><img src="./imgs/logo-main.png" class="img-fluid" alt="lavana nav"></a>
+                  <a href="./index.html"><img src="./dist/imgs/logo-main.png" class="img-fluid" alt="lavana nav"></a>
                 </div>
                 <div class="conuntries">
                   <dropdown>
                     <input id="toggle2" type="checkbox">
                     <label for="toggle2" class="animate">
                       <div class="country-rec">
-                        <img src="./imgs/flag.png" class="lang-icon" alt="country icon">
+                        <img src="./dist/imgs/flag.png" class="lang-icon" alt="country icon">
                         <div class="lang-content">
                           <a href="#" class="lang-name">تسليم ل</a>
                           <span class="country-name">جده</span>
@@ -44,7 +46,7 @@
             <div class="col-md-6">
               <div class="search">
                   <input type="search" id="searched" placeholder="عن ماذا تبحث ؟" autocomplete="off" >
-                  <img src="./imgs/search.png" alt="search icon">
+                  <img src="./dist/imgs/search.png" alt="search icon">
               </div>
               <dropdown>
                 <input id="toggle2" type="checkbox">
@@ -52,7 +54,7 @@
                   <div class="country-rec">
                     <div class="lang-content">
                       <span class="country-name">جده</span>
-                      <span><img src="./imgs/arrow.png" class="lang-icon" alt="country icon"></span>
+                      <span><img src="./dist/imgs/arrow.png" class="lang-icon" alt="country icon"></span>
                     </div>
                   </div>
                 </label>
@@ -64,10 +66,10 @@
             </div>
             <div class="col-md-2 d-flex">
               <div class="download-app">
-                <img src="./imgs/Group.png" class="img-fluid" alt="app store">
+                <img src="./dist/imgs/Group.png" class="img-fluid" alt="app store">
               </div>
               <div class="download-app">
-                <img src="./imgs/Layer 2.png" class="img-fluid" alt="google play">
+                <img src="./dist/imgs/Layer 2.png" class="img-fluid" alt="google play">
               </div>
             </div>
         </div>
@@ -117,19 +119,19 @@
         <div class="col-md-3 d-flex align-items-center">
           <div class="login">
             <a href="#">
-              <span><img src="./imgs/person.png" class="img-fluid" alt="login icon"></span>
+              <span><img src="./dist/imgs/person.png" class="img-fluid" alt="login icon"></span>
               <p>تسجيل الدخول</p>
             </a>
           </div>
           <div class="fav">
             <a href="#">
-              <span><img src="./imgs/Heart_01.png" class="img-fluid" alt="fav icon"></span>
+              <span><img src="./dist/imgs/Heart_01.png" class="img-fluid" alt="fav icon"></span>
               <p>المفضله</p>
             </a>
           </div>
           <div class="cart">
             <a href="#">
-              <span><img src="./imgs/Vector3.png" class="img-fluid" alt="cart icon"></span>
+              <span><img src="./dist/imgs/Vector3.png" class="img-fluid" alt="cart icon"></span>
               <p>عربه التسوق</p>
             </a>
           </div>
@@ -137,12 +139,13 @@
       </div>
     </nav>
     <!-- end nav -->
-    <!-- satrt header -->
+
+    <!--start header -->
     <header>
       <section class="header-container">
         <div class="discounts-container">
           <div class="disc-baner">
-            <img src="./imgs/banner.png" class="w-100" alt="discount banar">
+            <img src="./dist/imgs/banner.png" class="w-100" alt="discount banar">
           </div>
           <div class="offers-sliders">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -153,15 +156,15 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers ">
+                  <img src="./dist/imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers ">
                 </div>
                 <div class="carousel-item">
-                  <img src="./imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers">
+                  <img src="./dist/imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers">
+                  <img src="./dist/imgs/ar_banner-2.png" class="d-block w-100" alt="banar offers">
                   <div class="carousel-caption d-none d-md-block">
                   </div>
                 </div>
@@ -180,13 +183,3405 @@
       </section>
     </header>
     <!-- end header -->
+
+    <!-- start section wraper -->
+    <section class="sections-wraper">
+      <div class="container-fluid">
+        <div class="autoplay">
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash8.png" alt="mobiles">
+              </div>
+              <a href="#" class="section-heading">موبايلات</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash6.png" alt="electronics">
+              </div>
+              <a href="#" class="section-heading">الكترونيات</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash7.png" alt="cameras">
+              </div>
+              <a href="#" class="section-heading">كاميرات</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash5.png" alt="smart watches">
+              </div>
+              <a href="#" class="section-heading">ساعات ذكيه</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash1.png" alt="Beauty image">
+              </div>
+              <a href="#" class="section-heading">ادوات تجميل</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash4.png" alt="women's clothing">
+              </div>
+              <a href="#" class="section-heading">ملابس نسائيه</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash4.png" alt="women's clothing">
+              </div>
+              <a href="#" class="section-heading">ملابس نسائيه</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash2.png" alt="man clothing">
+              </div>
+              <a href="#" class="section-heading">ملابس رجال</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash3.png" alt="games image">
+              </div>
+              <a href="#" class="section-heading">العاب</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash1.png" alt="Beauty image">
+              </div>
+              <a href="#" class="section-heading">ادوات تجميل</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash4.png" alt="women's clothing">
+              </div>
+              <a href="#" class="section-heading">ملابس نسائيه</a>
+            </a>
+          </div>
+          <div class="section-container">
+            <a href="#">
+              <div class="section-img">
+                <img src="./dist/imgs/unsplash2.png" alt="man clothing">
+              </div>
+              <a href="#" class="section-heading">ملابس رجال</a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section wraper -->
+
+    <!-- start section offers -->
+    <div class="offers">
+      <div class="container-fluid">
+        <div class="offer-container">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="#">
+                <div class="offer-content d-flex">
+                    <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <div class="offer-content d-flex">
+                    <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <div class="offer-content d-flex">
+                    <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <div class="offer-content d-flex">
+                    <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-xxl">
+          <div class="ramdan-offers d-flex">
+              <div class="ramadanOffers-title">
+                  عروض شهر رمضان
+              </div>
+              <div class="offers-days d-flex">
+                <div class="days">
+                    <p>15</p>
+                    <span>ثواني</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>03</p>
+                  <span>دقائق</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>12</p>
+                  <span>ساعات</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>2</p>
+                  <span>ايام</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="promo-ramdan">
+        <img src="./dist/imgs/Group 208.png" class="w-100" alt="">
+      </div>
+      <div class="container">
+        <div class="special-offers">
+          <h2>عروض خاصه من اجلك</h2>
+          <h2>كل خصم نقوم بتقديمه هو الافضل في السوق</h2>
+          <div>
+            تخفيضات ل 40% اغتنم الفرصه الان
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section offers -->
+
+    <!-- start section day-offers -->
+    <section class="day-offers">
+      <div class="container">
+        <h3 class="dayOffers-title"><a href="#">عروض اليوم</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="offersDay-cart offer-days">
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section day-offers -->
+
+    <!-- start section super-product -->
+    <section class="super-product">
+      <div class="container">
+        <div class="superProduct-title">
+          عروض سوبر ل 24 ساعه فقط
+        </div>
+      </div>
+      <div class="superProduct-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="superProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/Rectangle 740.png" alt="super product image">
+                </div>
+                <div class="superProduct-details">
+                  <a href="#">عروض الاكترونيات</a>
+                  <h1 class="super-discount"><a href="">خصم حتي 60%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="superProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/Rectangle 740.png" alt="super product image">
+                </div>
+                <div class="superProduct-details">
+                  <a href="#">عروض الاكترونيات</a>
+                  <h1 class="super-discount"><a href="">خصم حتي 60%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="superProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/Rectangle 740.png" alt="super product image">
+                </div>
+                <div class="superProduct-details">
+                  <a href="#">عروض الاكترونيات</a>
+                  <h1 class="super-discount"><a href="">خصم حتي 60%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="superProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/Rectangle 740.png" alt="super product image">
+                </div>
+                <div class="superProduct-details">
+                  <a href="#">عروض الاكترونيات</a>
+                  <h1 class="super-discount"><a href="">خصم حتي 60%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="superProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/Rectangle 740.png" alt="super product image">
+                </div>
+                <div class="superProduct-details">
+                  <a href="#">عروض الاكترونيات</a>
+                  <h1 class="super-discount"><a href="">خصم حتي 60%</a></h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section super-product -->
+
+    <!-- start section day-offers -->
+    <section class="electronic-offers">
+      <div class="container">
+        <h3 class="electronicOffers-title"><a href="#">عروض الالكترونيات</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="electronicOffers-cart">
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section day-offers -->
+
+    <!-- start section ramdan-product -->
+    <section class="reamdan-product">
+      <div class="container">
+        <h3 class="reamdanProduct-title"><a href="#">منتجات شهر <span>رمضان</span></a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="ramadanProduct-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/offer1.png" alt="ramadan product image">
+              </div>
+              <a href="#">الافطار والسحور</a>
+            </div>
+            <div class="col-md-2">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/offer1.png" alt="ramadan product image">
+              </div>
+              <a href="#">عبادوروحانيات</a>
+            </div>
+            <div class="col-md-2">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/offer1.png" alt="ramadan product image">
+              </div>
+              <a href="#">العاب وترفيه</a>
+            </div>
+            <div class="col-md-2">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/offer1.png" alt="ramadan product image">
+              </div>
+              <a href="#">روتين وتجميل</a>
+            </div>
+            <div class="col-md-2">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/offer1.png" alt="ramadan product image">
+              </div>
+              <a href="#">سكتشرز</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section ramdan-product -->
+
+    <!-- start section offers -->
+    <div class="offers">
+      <div class="container-fluid">
+        <div class="offer-container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="offer-content d-flex">
+                  <div class="offerContent-desc">
+                    <a href="#">خصم 20% الاشتراك في القائمه البريديه</a>
+                    <span>المنزل وادوات البيت</span>
+                  </div>
+                  <div class="offerContent-product">
+                    <img src="./dist/imgs/product1.png" class="img-fluid" alt="product">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="offer-content d-flex">
+                  <div class="offerContent-desc">
+                    <a href="#">اشتري واحده تحصل علي الاخر مجانا</a>
+                    <span>ادوات التجميل</span>
+                  </div>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/product1.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="offer-content d-flex">
+                  <div class="offerContent-desc">
+                    <a href="#">الشحن مجاني علي منتجات باكثر من 300 ريال</a>
+                    <span>الاحذيه</span>
+                  </div>
+                    <div class="offerContent-product">
+                      <img src="./dist/imgs/product1.png" class="img-fluid" alt="product">
+                    </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-xxl">
+          <div class="ramdan-offers d-flex">
+              <div class="ramadanOffers-title">
+                  عروض شهر رمضان
+              </div>
+              <div class="offers-days d-flex">
+                <div class="days">
+                    <p>15</p>
+                    <span>ثواني</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>03</p>
+                  <span>دقائق</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>12</p>
+                  <span>ساعات</span>
+                </div>
+                <span>:</span>
+                <div class="days">
+                  <p>2</p>
+                  <span>ايام</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="promo-ramdan">
+        <img src="./dist/imgs/Group 208.png" class="w-100" alt="">
+      </div>
+      <div class="container">
+        <div class="special-offers">
+          <h2>عروض خاصه من اجلك</h2>
+          <h2>كل خصم نقوم بتقديمه هو الافضل في السوق</h2>
+          <div>
+            تخفيضات ل 40% اغتنم الفرصه الان
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section offers -->
+
+    <!-- start section ramdan-product -->
+    <section class="reamdan-product">
+      <div class="container">
+        <div class="ramadanOffers-title">
+          تالقي طول شهر رمضان
+        </div>
+        <div class="ramadanProduct-container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product2.png" alt="ramadan product image">
+              </div>
+              <a href="#">ادوات وتجميل</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product3.png" alt="ramadan product image">
+              </div>
+              <a href="#">ازياء رمضان</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product4.png" alt="ramadan product image">
+              </div>
+              <a href="#">ملابس نسائيه</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product5.png" alt="ramadan product image">
+              </div>
+              <a href="#">ازياء نسائيه</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section ramdan-product -->
+
+    <!-- start section women-fashion -->
+    <section class="women-fashion">
+      <div class="container">
+        <h3 class="womenFashion-title"><a href="#">اذياء نسائيه</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="womenFashion-cart">
+          <div class="womenFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="offersCart-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section women-fashion -->
+
+    <!-- start section womenFashion-offers -->
+    <section class="womenFashion-offers">
+      <div class="container">
+        <h3 class="womenFashion-title"><a href="#">خصم 40 % علي الازياء النسائيه</a></h3>
+        <h4 class="shop-now"><a href="#">شاهد كل العروض</a></h4>
+      </div>
+      <div class="womenFashion-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/clo5.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">ملابس البيت</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/clo4.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">فستان</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/clo3.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">احذيه</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/clo2.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">شنط يد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/clo1.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">ملابس رياضيه</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section womenFashion-offers -->
+
+    <!-- start section product-discount -->
+    <section class="product-discount">
+      <div class="container">
+        <div class="product-tiitle">
+          <div class="producTitle-content">
+            <h2><a href="#">تخفيضات حتي 40%</a></h2>
+            <p><a href="#">عروض لمده 24 ساعه تصفح المنتجات قبل نفاذالكميه</a></p>
+          </div>
+          <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+        </div>
+        <div class="productDiscount-content">
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo11.png" alt="product image"></a>
+            <a href="#">أحذيه</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo10.png" alt="product image"></a>
+            <a href="#">ادوات تجمل</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo9.png" alt="product image"></a>
+            <a href="#">فرش</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo8.png" alt="product image"></a>
+            <a href="#">عطور</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo7.png" alt="product image"></a>
+            <a href="#">ملابس رجاليه</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo7.png" alt="product image"></a>
+            <a href="#">ملابس نسائيه</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo8.png" alt="product image"></a>
+            <a href="#">عطور</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo7.png" alt="product image"></a>
+            <a href="#">ملابس رجاليه</a>
+          </div>
+          <div class="product-show">
+            <a href="#"><img src="./dist/imgs/clo7.png" alt="product image"></a>
+            <a href="#">ملابس نسائيه</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section product-discount -->
+
+    <!-- start section ramdan-product -->
+    <section class="reamdan-product">
+      <div class="container">
+        <div class="ramadanOffers-title">
+          تالقي طول شهر رمضان
+        </div>
+        <div class="ramadanProduct-container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product5.png" alt="ramadan product image">
+              </div>
+              <a href="#">ازياء نسائيه</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product4.png" alt="ramadan product image">
+              </div>
+              <a href="#">ملابس نسائيه</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product3.png" alt="ramadan product image">
+              </div>
+              <a href="#">ازياء رمضان</a>
+            </div>
+            <div class="col-md-3">
+              <div class="reamdanProduct-img">
+                <img src="./dist/imgs/product2.png" alt="ramadan product image">
+              </div>
+              <a href="#">ادوات وتجميل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section ramdan-product -->
+
+    <!-- start section man-fashion -->
+    <section class="man-fashion">
+      <div class="container">
+        <h3 class="manFashion-title"><a href="#">اذياءرجاليه</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="manFashion-cart">
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/cloman7.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/y.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/z.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/y.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/z.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="manFashion-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/cloman7.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section man-fashion -->
+
+    <!-- start section manFashion-offers -->
+    <section class="manFashion-offers">
+      <div class="container">
+        <h3 class="womenFashion-title"><a href="#">خصم 40 % علي الازياء الرجاليه</a></h3>
+        <h4 class="shop-now"><a href="#">شاهد كل العروض</a></h4>
+      </div>
+      <div class="womenFashion-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/cloman14.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">ملابس البيت</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/cloman12.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">بنطلونات</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/cloman11.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">احذيه</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/cloman10.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">شنط يد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="womenFashion-content">
+                <div class="womenFashion-img">
+                  <img src="./dist/imgs/cloman19.png" alt="super product image">
+                </div>
+                <div class="womenFashion-details">
+                  <a href="#">ملابس رياضيه</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section manFashion-offers -->
+
+    <!-- start section need-product -->
+    <section class="need-product">
+      <div class="container">
+        <div class="needProduct-title">
+          عروض علي احتياجات البيت لشهر رمضان
+        </div>
+      </div>
+      <div class="needProduct-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/ar_5.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">عروض البيت والمطبخ</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 20%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/ar_4.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">تمور ومكسرات</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 20%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/ar_3.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">مشروبات وعصائر</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 20%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/ar_2.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">سلع غذائيه</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 20%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/ar_1.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">نظافه وادوات</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 20%</a></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section super-product -->
+
+    <!-- start section home-offers -->
+    <section class="home-offers">
+      <div class="container">
+        <h3 class="home-title"><a href="#">عروض الالكترونيات</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="home-cart">
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section home-offers -->
+
+    <!-- start section houseAppl-offers -->
+    <section class="houseAppl-offers">
+      <div class="container">
+        <h3 class="houseApplOffers-title"><a href="#">عروض الالكترونيات</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="houseAppl-cart">
+          <div class="houseAppl-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="houseAppl-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="houseAppl-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="houseAppl-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="houseAppl-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp1.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="houseAppl-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/secoundunsp3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section houseAppl-offers -->
+
+      <!-- start section offers -->
+      <div class="offers">
+        <div class="container">
+          <div class="offer-container">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <div class="offer-content d-flex">
+                      <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                      <div class="offerContent-product">
+                        <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="offer-content d-flex">
+                      <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                      <div class="offerContent-product">
+                        <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="offer-content d-flex">
+                      <a href="#">تمتع بخصم 60% عند شرائك اكتر من منتج</a>
+                      <div class="offerContent-product">
+                        <img src="./dist/imgs/Rec3.png" class="img-fluid" alt="product">
+                      </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end section offers -->
+
+    <!-- start section need-product -->
+    <section class="need-product">
+      <div class="container">
+        <div class="needProduct-title">
+          عروض علي الالكترونيات البيت لشهر رمضان
+        </div>
+      </div>
+      <div class="needProduct-container">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/unsplash19.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">الكمبيوتر</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/unsplash29.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">الموبايل</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/unsplash285.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">كاميرات</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/unsplash27.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">ساعات ذكيه</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="needProduct-content">
+                <div class="superProduct-img">
+                  <img src="./dist/imgs/unsplash26.png" alt="super product image">
+                </div>
+                <div class="needProduct-details">
+                  <a href="#">اكسسوارات كمبيوتر</a>
+                  <h1 class="super-discount"><a href="#">خصم حتي 25%</a></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section need-product -->
+
+    <!-- start section computerProduct-offer -->
+    <section class="computerProduct-offers">
+      <div class="container">
+        <h3 class="computerProduct-title"><a href="#">عروض الالكترونيات</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="computerProduct-cart">
+          <div class="computerProduct-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash19.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="computerProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash18.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="computerProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash17.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="computerProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash17.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="computerProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash16.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="computerProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash15.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section computerProduct-offers -->
+
+    <!-- start section mobileProduct-offer -->
+    <section class="mobileProduct-offers">
+      <div class="container">
+        <h3 class="mobileProduct-title"><a href="#">عروض الالكترونيات</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="mobileProduct-cart">
+          <div class="mobileProduct-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash25.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash24.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash24.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash23.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash22.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash20.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section computerProduct-offers -->
+
+    <!-- start instal-Offer-->
+    <div class="instal-Offer">
+      <div class="instalOffer-content">
+        <img src="./dist/imgs/Group 285.png" class="w-100" alt="Installment Offer image">
+      </div>
+    </div>
+    <!-- end instal-Offer-->
+
+    <!-- start section need-product -->
+    <section class="need-product">
+    <div class="container">
+      <div class="needProduct-title">
+        عروض علي الميكب البيت لشهر رمضان
+      </div>
+      <h4 class="shop-now"><a href="#">شاهد كل العروض</a></h4>
+    </div>
+    <div class="needProduct-container">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="needProduct-content">
+              <div class="superProduct-img">
+                <img src="./dist/imgs/unsplash19.png" alt="super product image">
+              </div>
+              <div class="needProduct-details">
+                <a href="#">الكمبيوتر</a>
+                <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="needProduct-content">
+              <div class="superProduct-img">
+                <img src="./dist/imgs/unsplash29.png" alt="super product image">
+              </div>
+              <div class="needProduct-details">
+                <a href="#">الموبايل</a>
+                <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="needProduct-content">
+              <div class="superProduct-img">
+                <img src="./dist/imgs/unsplash285.png" alt="super product image">
+              </div>
+              <div class="needProduct-details">
+                <a href="#">كاميرات</a>
+                <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="needProduct-content">
+              <div class="superProduct-img">
+                <img src="./dist/imgs/unsplash27.png" alt="super product image">
+              </div>
+              <div class="needProduct-details">
+                <a href="#">ساعات ذكيه</a>
+                <h1 class="super-discount"><a href="#">خصم حتي 30%</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="needProduct-content">
+              <div class="superProduct-img">
+                <img src="./dist/imgs/unsplash26.png" alt="super product image">
+              </div>
+              <div class="needProduct-details">
+                <a href="#">اكسسوارات كمبيوتر</a>
+                <h1 class="super-discount"><a href="#">خصم حتي 25%</a></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- end section need-product -->
+
+     <!-- start section perfume-offer -->
+     <section class="perfume-offer">
+      <div class="container">
+        <h3 class="perfume-offer-title"><a href="#">عروض العطور</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="perfume-offer-cart">
+          <div class="perfume-offer-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash36.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash35.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash34.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash33.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash32.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="mobileProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash31.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section perfume-offer -->
+
+     <!-- start section mobileProduct-offer -->
+     <section class="beauty-offers">
+      <div class="container">
+        <h3 class="beautyProduct-title"><a href="#">عروض ادوات التجميل</a></h3>
+        <h4 class="shop-now"><a href="#">تسوق الان</a></h4>
+      </div>
+      <div class="container-fluid">
+        <div class="beautyProduct-cart">
+          <div class="beautyProduct-container">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/unsplash40.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="beautyProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/sl.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="beautyProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/sl2.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="beautyProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/sl3.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="beautyProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/sl4.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="beautyProduct-offers">
+            <div class="product-img">
+              <a href="#">
+                <img src="./dist/imgs/sl.png" class="img-fluid" alt="product img">
+              </a>
+              <div class="product-option d-flex">
+                <a href="#"><img src="./dist/imgs/Vector3.png" alt="shoping cart icon"></a>
+                <a href="#"><img src="./dist/imgs/Heart_01.png" alt="fav -icon"></a>
+                <a href="#"><img src="./dist/imgs/Vector1.png" alt="see icon"></a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="#" class="product-desc">
+                حذء نسائي للاناقه والراحه
+                حذء نسائي للاناقه والراحه
+              </a>
+              <div class="product-rate d-flex">
+                <div class="rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                  <img src="./dist/imgs/rate.png" alt="product rate">
+                </div>
+                <div class="rate-num">
+                  <span>(5.0)</span>
+                  <span>تقيم 420 عميل</span>
+                </div>
+              </div>
+              <div class="option  d-flex">
+                  <h3 class="fast-charging"><a href="#">شحن سريع</a></h3>
+                  <p class="product-price">
+                    <a href="#" class="main-price">60 SAR</a>
+                    <a href="#" class="dicountAfte-price">50 SAR</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section computerProduct-offers -->
+
+    <!-- start section brands-->
+    <div class="brands">
+      <div class="container">
+        <div class="brands-title">افضل العالمات التجاريه</div>
+        <div class="row">
+          <div class="col">
+            <img src="./dist/imgs/brand1.png" alt="">
+          </div>
+          <div class="col">
+            <img src="./dist/imgs/brand2.png" alt="">
+          </div>
+          <div class="col">
+            <img src="./dist/imgs/brand3.png" alt="">
+          </div>
+          <div class="col">
+            <img src="./dist/imgs/brand4.png" alt="">
+          </div>
+          <div class="col">
+            <img src="./dist/imgs/brand1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section brands-->
+
+    <!-- start helping center -->
+    <section class="our-helpingCenter">
+      <div class="helpingCenter-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">
+              <p class="helpingCenter-desc">
+                <a href="#">نحن دائما جاهزون لمساعدتك</a>
+                <a href="#">تواصل معنا عبر قنوات الدعم التاليه</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <img src="./dist/imgs/Smile.png" class="img-fluid" alt="smile icon">
+              <h3 class="helpingcenter-title"><a href="#">مركز المساعده</a></h3>
+              <a href="" class="helpingcenter-url">help.lavana.com</a>
+            </div>
+            <div class="col-md-2">
+              <img src="./dist/imgs/Mail.png" class="img-fluid" alt="mail icon">
+              <h3 class="Mail-title"><a href="#">البريد الاكتروني</a></h3>
+              <a href="" class="helpingcenter-url">support@lavana.com</a>
+            </div>
+            <div class="col-md-2">
+              <img src="./dist/imgs/Phone.png" class="img-fluid" alt="smile icon">
+              <h3 class="helpingcenter-phone"><a href="#">عبر الهاتف</a></h3>
+              <a href="" class="helpingcenter-phone">050000000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end helping center -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="footer-desktop">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="our-mision">
+                <a href="#"><img src="./dist/imgs/logo-main.png" alt="logo"></a>
+                <h3 class="about-title">افضل متجر عربي</h3>
+                <p class="ourMision-desc">نقدم افضل المنتجات باعلي جوده</p>
+                <div class="contact-social">
+                  <a href="#"><img src="./dist/imgs/Social Icons-3.png" alt=""></a>
+                  <a href="#"><img src="./dist/imgs/Social Icons-2.png" alt=""></a>
+                  <a href="#"><img src="./dist/imgs/Social Icons-1.png" alt=""></a>
+                  <a href="#"><img src="./dist/imgs/Social Icons.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="about-us">
+                <ul>
+                  <li><a href="#">تعرف علينا</a></li>
+                  <li><a href="#">تواصل معنا</a></li>
+                  <li><a href="#">الشروط والاحكام</a></li>
+                  <li><a href="#">سياسه الارجاع والتبديل</a></li>
+                  <li><a href="#">معلومات الشحن والارشال</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="contact">
+                <ul>
+                  <li><a href="#">صفحتك الشخصيه</a></li>
+                  <li><a href="#">عربه التسوق</a></li>
+                  <li><a href="#">تتبع طلبيتك</a></li>
+                  <li><a href="#">اعدات الدفع الالكتروني</a></li>
+                  <li><a href="#">اساله واجوبه</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="account-conatainer">
+                <ul>
+                  <li><a href="#">صفحتك الشخصيه</a></li>
+                  <li><a href="#">عربه التسوق</a></li>
+                  <li><a href="#">تتبع طلبيتك</a></li>
+                  <li><a href="#">اعدات الدفع الالكتروني</a></li>
+                  <li><a href="#">اساله واجوبه</a></li>
+                </ul>
+              </div>
+              <div class="contact-us">
+                <ul class="contactUs-container">
+                  <li class="contact-item"><a href="#" class="contact-link>
+                    <img src="./dist/imgs/location_pin.png" alt="gps icon">
+                    <span>الرياض.المملكه العربيه السعوديه</span>
+                  </a></li>
+                  <li class="contact-item"><a href="#" class="contact-link>
+                    <img src="./dist/imgs/call.png" alt="call icon">
+                    <span>اتصل بنا : 04200000</span>
+                  </a></li>
+                  <li class="contact-item"><a class="contact-link" href="#">
+                    <img src="./dist/imgs/email.png" alt="email icon">
+                    <span>راسلنا الان : Support@Taswaq.com</span>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyRight-content">
+          <p class="copy-right">جميع الحقوق محفوظه 2022 &copy; صنع ب<img src="./dist/imgs/Heart_01.png" alt="heart icon">بوسطه Lavana</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- js slick files -->
-    <script src="./vendor/jsPlugin/jquery-min.js"></script>
-    <script src="./vendor/jsPlugin/jquery-migrate-min.js"></script>
-    <script src="./vendor/jsPlugin/slick-min.js"></script>
+    <script src="./dist/js/jsPlugins/jquery-min.js"></script>
+    <script src="./dist/js/jsPlugins/iquery-migrate-min.js"></script>
+    <!-- <script src="./dist/vendore/jsPlugins/slick.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- js files -->
-    <script src="./js/main.js"></script>
+    <script src="./dist/js/main.js"></script>
   </body>
 </html>
