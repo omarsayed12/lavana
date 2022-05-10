@@ -1,0 +1,307 @@
+// satrt nav
+.upper-nav {
+  .conuntries {
+    margin-right: 20px;
+    .lang-icon {
+      max-width: 32px;
+      object-fit: scale-down;
+    }
+    dropdown{
+      position: relative;
+      label, dropdown ul li{
+        display: block;
+       }
+       .animate {
+        @include transisionElement(all .3s);
+        @include backfaceVisibility(hidden);
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      label{
+        @extend %position-color-zIndex;
+       }
+       input{
+        display: none;
+       }
+       input ~ ul{
+        @extend %position-visabilty-opacity;
+      }
+      input:checked ~ ul{
+        @extend %position-opacity-checked
+      }
+    }
+    .country-content {
+      .country-name {
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+        line-height: 14px;
+        color: $primary-dark;
+        padding-right: 7px;
+      }
+    }
+    .country-content {
+      position: relative;
+    }
+    .country-content::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      height: 23px;
+      width: 12px;
+      background: url(../imgs/arrow.png)center no-repeat;
+      background-size: contain;
+    }
+  }
+  .languge {
+    dropdown{
+      position: relative;
+      label, dropdown ul li{
+        display: block;
+       }
+       .animate {
+        @include transisionElement(all .3s);
+        @include backfaceVisibility(hidden);
+          &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+          }
+        }
+      label{
+        @extend %position-color-zIndex;
+       }
+       input{
+        display: none;
+       }
+       input ~ ul{
+        @extend %position-visabilty-opacity;
+        left: -20px;
+      }
+      input:checked ~ ul{
+        @extend %position-opacity-checked;
+        left: -20px;
+      }
+    }
+  }
+  .lang-name {
+    padding: 2px 20px;
+    &:nth-of-type(1) {
+      border-bottom: 1px solid $light-gray;
+    }
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+      @include transisionElement(all .9s !important) ;
+    }
+  }
+  .search {
+    position: relative;
+    width: 88%;
+    max-width: 100%;
+    height:56px;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
+                0px 4px 16px rgba(51, 51, 51, 0.08);
+    input {
+      border: 0;
+      border-radius:50px;
+      width: 100%;
+      color: $light-gray;
+      height: 100%;
+      font: {
+        size: 16px;
+        weight: 400;
+      }
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+    img {
+      position: absolute;
+      object-fit: scale-down;
+      left: 15px;
+      background-color: #FFF;
+    }
+  }
+}
+
+nav {
+  background-color: $main-color;
+  .nav-link {
+    font: {
+      size: 18px;
+      weight: 500;
+    }
+    line-height: 24px;
+    color: $primary-dark;
+  }
+  .dropdown-toggle {
+    position: relative;
+  }
+  .dropdown-toggle::after {
+    position: absolute;
+    border: none;
+    height: 23px;
+    width: 12px;
+    left: 18px;
+    top: 11px;
+    background: url(../imgs/arrow.png) left no-repeat;
+    background-size: contain;
+  }
+  .dropdown-menu {
+    min-width: 13rem;
+    .dropdown-item {
+      padding: 10px 7px;
+      color: $primary-dark;
+      font: {
+        size: 17px;
+        weight: 500;
+      }
+      @include transisionElement(all .5s);
+      &:hover {
+        padding-right: 30px;
+        color: $main-color
+      }
+    }
+  }
+  .sections {
+    border-right: 1px solid $light-gray;
+    .nav-link {
+     @extend %font-color-sectios;
+     &:hover {
+       color: $light-gray;
+     }
+    }
+  }
+  .login, .fav, .cart{
+    text-align: center;
+    p {
+      @extend %font-color-sectios;
+    }
+    &:hover img {
+      @include transisionElement(transform .7s ease);
+      transform: scale(1.1);
+    }
+    &:hover p {
+      @include transisionElement(color .7s ease);
+      color: $light-gray;
+    }
+  }
+}
+
+// start sections-wraper
+.sections-wraper {
+  text-align: center;
+  padding: 30px 0;
+  .section-heading {
+    @extend %font-lineHeight-color ;
+  }
+}
+
+// start offers
+.offers {
+  .offer-container {
+    padding: 35px 17px;
+    background: rgba(121, 136, 151, 0.1);
+    .offer-content {
+      @extend %offer-content-style;
+      a {
+        @extend %offer-style;
+      }
+    }
+  }
+  .ramdan-offers {
+    padding-top: 50px;
+    .ramadanOffers-title {
+      @extend %ramadan-offers-style;
+      background-color: $light-blue;
+      width: 347px;
+
+    }
+    .offers-days {
+      .days {
+        text-align: center;
+        p {
+          color: #FFFFFF;
+          background-color: $light-blue;
+          width: 58.59px;
+          height: 48.83px;
+          box-shadow: 0px 5.58025px 5.58025px rgba(0, 0, 0, 0.25);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font: {
+            size: 33.45815px;
+            weight: 400;
+          }
+          line-height: 22px;
+          text-align: center;
+        }
+        span {
+          color: $light-blue;
+          font: {
+            size: 19.5309px;
+            weight: 400;
+          }
+          line-height: 22px;
+        }
+      }
+      .dot {
+        color: $light-blue;
+        color: #364B70;
+        line-height: 39px;
+        margin: 0 10px;
+        font: {
+          size: 50.2222px;
+          weight: 400;
+        }
+      }
+    }
+  }
+  .special-offers {
+    padding: 10px  0 60px;
+    text-align: center;
+    h2 {
+      color: $light-blue;
+      line-height: 24px;
+      font: {
+        size: 28px;
+        weight: 700;
+      }
+    }
+    .best-descount {
+      color: $main-color;
+      line-height: 24px;
+      padding: 21px 0 26px;
+      font: {
+        size: 36px;
+        weight: 700;
+      }
+      span {
+        color: $light-blue;
+      }
+    }
+    .bestDescount-container {
+      background-color: $white-color;
+      border-radius: 50px;
+      padding: 5px;
+      border: 1px #B92728 dashed;
+      .bestDescount-heading {
+        background-color: $main-color;
+        border-radius: 50px;
+
+        padding: 10px;
+        font: {
+          size: 48px;
+          weight: 700;
+        }
+        color: $white-color;
+      }
+    }
+  }
+}

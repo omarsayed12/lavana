@@ -21,6 +21,15 @@
     transition: $tran;
 }
 
+@mixin backfaceVisibility($property) {
+    -webkit-backface-visibility: $property;
+    -moz-backface-visibility: $property;
+    -o-backface-visibility: $property;
+    -ms-backface-visibility: $property;
+    backface-visibility: $property;
+}
+
+
 @mixin transformElment($property) {
     -webkit-transform: $property;
     -moz-transform: $property;

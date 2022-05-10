@@ -7,6 +7,81 @@
   margin-bottom: 15px;
 }
 
+.upper-nav .languge dropdown label, .upper-nav .conuntries dropdown label {
+  position: relative;
+  color: #000000;
+  z-index: 2;
+}
+
+.upper-nav .languge dropdown input ~ ul, .upper-nav .conuntries dropdown input ~ ul {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 17px;
+  left: 7px;
+  z-index: 1;
+}
+
+.upper-nav .languge dropdown input:checked ~ ul, .upper-nav .conuntries dropdown input:checked ~ ul {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 35px;
+  left: 7px;
+  background-color: #FFFFFF;
+  border: 1px solid #B92728;
+  border-radius: 3px;
+}
+
+nav .login p, nav .fav p, nav .cart p, nav .sections .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  font-line-height: 20px;
+  color: #FFFFFF;
+}
+
+.sections-wraper .section-heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #212529;
+}
+
+.offers .offer-container .offer-content a {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 0 0 10px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.offers .offer-container .offer-content {
+  background-color: #B92728;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.offers .ramdan-offers .ramadanOffers-title {
+  border-radius: 50px 0px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 0;
+  width: 347px;
+  position: relative;
+  font-size: 24px;
+  font-weight: 24px;
+}
+.offers .ramdan-offers .ramadanOffers-title::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  background: url("../imgs/Vector.png") center no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
 .red-overlay {
   position: absolute;
   left: 0;
@@ -30,6 +105,330 @@ input:-webkit-autofill:active {
 
 body::-webkit-scrollbar {
   width: 4px;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #FFFFFF;
+}
+
+.carousel-control-next-icon {
+  background: url("../imgs/arroe-carousel-left.png") center no-repeat;
+  background-color: #FFF;
+  background-size: 30%;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.carousel-control-prev-icon {
+  background: url("../imgs/arrow-carosel-right.png") center no-repeat;
+  background-color: #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #B92728;
+  width: 12px;
+  height: 8px;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+
+.upper-nav .conuntries {
+  margin-right: 20px;
+}
+.upper-nav .conuntries .lang-icon {
+  max-width: 32px;
+  object-fit: scale-down;
+}
+.upper-nav .conuntries dropdown {
+  position: relative;
+}
+.upper-nav .conuntries dropdown label, .upper-nav .conuntries dropdown dropdown ul li {
+  display: block;
+}
+.upper-nav .conuntries dropdown .animate {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.upper-nav .conuntries dropdown .animate:hover {
+  cursor: pointer;
+}
+.upper-nav .conuntries dropdown input {
+  display: none;
+}
+.upper-nav .conuntries .country-content .country-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #212529;
+  padding-right: 7px;
+}
+.upper-nav .conuntries .country-content {
+  position: relative;
+}
+.upper-nav .conuntries .country-content::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  height: 23px;
+  width: 12px;
+  background: url(../imgs/arrow.png) center no-repeat;
+  background-size: contain;
+}
+.upper-nav .languge dropdown {
+  position: relative;
+}
+.upper-nav .languge dropdown label, .upper-nav .languge dropdown dropdown ul li {
+  display: block;
+}
+.upper-nav .languge dropdown .animate {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.upper-nav .languge dropdown .animate:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.upper-nav .languge dropdown input {
+  display: none;
+}
+.upper-nav .languge dropdown input ~ ul {
+  left: -20px;
+}
+.upper-nav .languge dropdown input:checked ~ ul {
+  left: -20px;
+}
+.upper-nav .lang-name {
+  padding: 2px 20px;
+}
+.upper-nav .lang-name:nth-of-type(1) {
+  border-bottom: 1px solid #A6A6A6;
+}
+.upper-nav .lang-name:hover {
+  background-color: #B92728;
+  color: #FFFFFF;
+  -webkit-transition: all 0.9s !important;
+  -moz-transition: all 0.9s !important;
+  -o-transition: all 0.9s !important;
+  -ms-transition: all 0.9s !important;
+  transition: all 0.9s !important;
+}
+.upper-nav .search {
+  position: relative;
+  width: 88%;
+  max-width: 100%;
+  height: 56px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+}
+.upper-nav .search input {
+  border: 0;
+  border-radius: 50px;
+  width: 100%;
+  color: #A6A6A6;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.upper-nav .search input:focus-visible {
+  outline: 0;
+}
+.upper-nav .search img {
+  position: absolute;
+  object-fit: scale-down;
+  left: 15px;
+  background-color: #FFF;
+}
+
+nav {
+  background-color: #B92728;
+}
+nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #212529;
+}
+nav .dropdown-toggle {
+  position: relative;
+}
+nav .dropdown-toggle::after {
+  position: absolute;
+  border: none;
+  height: 23px;
+  width: 12px;
+  left: 18px;
+  top: 11px;
+  background: url(../imgs/arrow.png) left no-repeat;
+  background-size: contain;
+}
+nav .dropdown-menu {
+  min-width: 13rem;
+}
+nav .dropdown-menu .dropdown-item {
+  padding: 10px 7px;
+  color: #212529;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav .dropdown-menu .dropdown-item:hover {
+  padding-right: 30px;
+  color: #B92728;
+}
+nav .sections {
+  border-right: 1px solid #A6A6A6;
+}
+nav .sections .nav-link:hover {
+  color: #A6A6A6;
+}
+nav .login, nav .fav, nav .cart {
+  text-align: center;
+}
+nav .login:hover img, nav .fav:hover img, nav .cart:hover img {
+  -webkit-transition: transform 0.7s ease;
+  -moz-transition: transform 0.7s ease;
+  -o-transition: transform 0.7s ease;
+  -ms-transition: transform 0.7s ease;
+  transition: transform 0.7s ease;
+  transform: scale(1.1);
+}
+nav .login:hover p, nav .fav:hover p, nav .cart:hover p {
+  -webkit-transition: color 0.7s ease;
+  -moz-transition: color 0.7s ease;
+  -o-transition: color 0.7s ease;
+  -ms-transition: color 0.7s ease;
+  transition: color 0.7s ease;
+  color: #A6A6A6;
+}
+
+.sections-wraper {
+  text-align: center;
+  padding: 30px 0;
+}
+.offers .offer-container {
+  padding: 35px 17px;
+  background: rgba(121, 136, 151, 0.1);
+}
+.offers .ramdan-offers {
+  padding-top: 50px;
+}
+.offers .ramdan-offers .ramadanOffers-title {
+  background-color: #364B70;
+  width: 347px;
+}
+.offers .ramdan-offers .offers-days .days {
+  text-align: center;
+}
+.offers .ramdan-offers .offers-days .days p {
+  color: #FFFFFF;
+  background-color: #364B70;
+  width: 58.59px;
+  height: 48.83px;
+  box-shadow: 0px 5.58025px 5.58025px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33.45815px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.offers .ramdan-offers .offers-days .days span {
+  color: #364B70;
+  font-size: 19.5309px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.offers .ramdan-offers .offers-days .dot {
+  color: #364B70;
+  color: #364B70;
+  line-height: 39px;
+  margin: 0 10px;
+  font-size: 50.2222px;
+  font-weight: 400;
+}
+.offers .special-offers {
+  padding: 10px 0 60px;
+  text-align: center;
+}
+.offers .special-offers h2 {
+  color: #364B70;
+  line-height: 24px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.offers .special-offers .best-descount {
+  color: #B92728;
+  line-height: 24px;
+  padding: 21px 0 26px;
+  font-size: 36px;
+  font-weight: 700;
+}
+.offers .special-offers .best-descount span {
+  color: #364B70;
+}
+.offers .special-offers .bestDescount-container {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 5px;
+  border: 1px #B92728 dashed;
+}
+.offers .special-offers .bestDescount-container .bestDescount-heading {
+  background-color: #B92728;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

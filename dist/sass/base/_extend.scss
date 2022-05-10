@@ -1,1 +1,82 @@
+%position-color-zIndex {
+    position: relative;
+    color: #000000;
+    z-index: 2;
+}
 
+%position-visabilty-opacity {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 17px;
+    left: 7px;
+    z-index: 1;
+}
+%position-opacity-checked {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    top: 35px;
+    left: 7px;
+    background-color: $white-color;
+    border: 1px solid $main-color;
+    border-radius: 3px;
+}
+
+%font-color-sectios {
+    font: {
+        weight: 500;
+        size: 16px;
+        line-height: 20px;
+    }
+    color: $white-color;
+}
+
+
+%font-lineHeight-color {
+    font: {
+        size: 14px;
+        weight: 700;
+    }
+    line-height: 16px;
+    color: $primary-dark;
+}
+
+%offer-style {
+    font: {
+        size:22px;
+        weight: 700;
+    }
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+%offer-content-style {
+    background-color: $main-color;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+%ramadan-offers-style {
+    border-radius: 50px 0px;
+    color: $white-color;
+    text-align: center;
+    padding: 8px 0;
+    width: 347px;
+    position: relative;
+    font: {
+        size: 24px;
+        weight: 24px
+    };
+    &::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        background:url('../imgs/Vector.png')center no-repeat;
+        height: 40px;
+        width: 40px;
+    }
+}

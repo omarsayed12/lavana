@@ -23,3 +23,11 @@ body::-webkit-scrollbar-thumb {
 	// box-shadow: inset 0 0 4px $primary-dark;
 	// background-color: $primary-dark;
 }
+
+.nav-link:focus, .nav-link:hover {
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
