@@ -1,0 +1,40 @@
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: $white-color;
+
+}
+
+.carousel-control-next-icon{
+  background: url('../imgs/arroe-carousel-left.png') center no-repeat;
+  background-color: #FFF;
+  background-size: 30%;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+
+.carousel-control-prev-icon {
+  background: url('../imgs/arrow-carosel-right.png') center no-repeat;
+  background-color: #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: $main-color;
+  width: 12px;
+  height: 8px;
+}

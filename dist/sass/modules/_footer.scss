@@ -1,0 +1,133 @@
+footer {
+   .footer-desktop {
+      background: rgba(243, 160, 142, 0.12);
+      padding: 20px 0 0;
+      .about-title {
+        @extend %mision-style;
+      }
+      .ourMision-desc {
+        @extend %mision-style;
+        font-size: 18px;
+      }
+      .contact-social {
+         a {
+          margin: 0 8px;
+        }
+      }
+      .footerDesktop-container {
+        @media screen and (max-width: 768.98px) {
+          padding: 26px;
+        }
+      }
+
+      @media screen and (min-width: 318px) and(max-width:991.99px) {
+        padding-bottom: 72px;
+      }
+    }
+    .footerItem-heading {
+      font: {
+        size: 24px;
+        weight: 700;
+      }
+      line-height: 24px;
+      color: $main-color;
+      margin-bottom: 18px
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        padding: 10px 0;
+          a {
+          font: {
+            size: 18px;
+            weight: 500;
+          }
+          line-height: 24px;
+          color: #000000;
+        }
+      }
+    }
+   .copyRight-content {
+      background-color: $main-color;
+      margin-top: 15px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -45px;
+        right: 26px;
+        height: 113px;
+        width: 109px;
+        background: url('../imgs/Group 283.png') center no-repeat;
+        background-color: #fff !important;
+        background-size: 55%;
+        border-radius: 50%;
+        border: 6px solid $main-color !important;
+      }
+      .copy-right {
+        text-align: center;
+        color: $white-color;
+        padding: 28px 0;
+        font: {
+          size: 24px;
+          weight: 400;
+        }
+        line-height: 24px;
+        @media screen and (max-width:487.98px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width:767.98px) {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width:740px) {
+        &::before {
+          top: -25px;
+          height: 53px;
+          width: 53px;
+          background-size: 57%;
+        }
+      }
+      @media screen and (max-width:870px) {
+        &::before {
+          top: -25px;
+          height: 80px;
+          width: 80px;
+          background-size: 57%;
+        }
+      }
+    }
+    // footer in mobile
+
+   .footerMobile {
+      position: fixed;
+      width: 100%;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $primary-dark;
+      .footerMobileItem-content {
+        display: flex;
+        justify-content: space-evenly;
+         .footerMobile-item {
+            .footerMobileItem-link {
+               text-align: center;
+               img {
+               max-width: 23px;
+               }
+               p {
+               margin: 0;
+               padding-top: 5px;
+              color: #9EA3A8;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 991.98px) {
+        display: none !important;
+      }
+   }
+}

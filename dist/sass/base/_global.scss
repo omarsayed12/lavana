@@ -31,3 +31,44 @@ body::-webkit-scrollbar-thumb {
 a {
 	text-decoration: none;
 }
+
+.offerHeading-common {
+	a {
+	  @extend %section-title;
+	  span {
+		color: $main-color
+	  }
+	}
+  }
+  .shop-now {
+	a {
+	  @extend %shop-now ;
+	  @include transisionElement(padding .7s ease);
+	}
+  }
+
+  dropdown{
+	position: relative;
+	label, dropdown ul li{
+	  display: block;
+	 }
+	 .animate {
+	  @include transisionElement(all .3s);
+	  @include backfaceVisibility(hidden);
+		&:hover {
+		  cursor: pointer;
+		}
+	  }
+	label{
+	  @extend %position-color-zIndex;
+	 }
+	 input{
+	  display: none;
+	 }
+	 input ~ ul{
+	  @extend %position-visabilty-opacity;
+	}
+	input:checked ~ ul{
+	  @extend %position-opacity-checked
+	}
+  }
