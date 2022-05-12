@@ -59,11 +59,11 @@ footer {
         position: absolute;
         top: -45px;
         right: 26px;
-        height: 113px;
-        width: 109px;
+        height: 100px;
+        width: 100px;
         background: url('../imgs/Group 283.png') center no-repeat;
         background-color: #fff !important;
-        background-size: 55%;
+        background-size: 50%;
         border-radius: 50%;
         border: 6px solid $main-color !important;
       }
@@ -79,16 +79,17 @@ footer {
         @media screen and (max-width:487.98px) {
           font-size: 14px;
         }
-        @media screen and (max-width:767.98px) {
+        @media screen and (min-width:487.99px) and (max-width:767.98px) {
           font-size: 20px;
         }
       }
       @media screen and (max-width:740px) {
         &::before {
-          top: -25px;
-          height: 53px;
-          width: 53px;
-          background-size: 57%;
+          // top: -25px;
+          // height: 53px;
+          // width: 53px;
+          // background-size: 57%;
+          display: none;
         }
       }
       @media screen and (max-width:870px) {
@@ -102,32 +103,39 @@ footer {
     }
     // footer in mobile
 
-   .footerMobile {
-      position: fixed;
-      width: 100%;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: $primary-dark;
-      .footerMobileItem-content {
-        display: flex;
-        justify-content: space-evenly;
-         .footerMobile-item {
-            .footerMobileItem-link {
-               text-align: center;
-               img {
-               max-width: 23px;
-               }
-               p {
-               margin: 0;
-               padding-top: 5px;
+  .footerMobile {
+    position: fixed;
+    // max-width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $primary-dark;
+    .footerMobileItem-content {
+      display: flex;
+      justify-content: space-between;
+        .footerMobile-item {
+          .footerMobileItem-link {
+              text-align: center;
+              img {
+              max-width: 23px;
+              @media screen and (max-width:575px) {
+                max-width: 16px;
+              }
+              }
+              p {
+              margin: 0;
+              padding-top: 5px;
               color: #9EA3A8;
-            }
+              @media screen and (max-width:575px) {
+                  font-size: 13px;
+                  letter-spacing: 0.03em;
+              }
           }
         }
       }
-      @media screen and (min-width: 991.98px) {
-        display: none !important;
-      }
-   }
+    }
+    @media screen and (min-width: 991.98px) {
+      display: none !important;
+    }
+  }
 }

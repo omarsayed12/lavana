@@ -25,6 +25,16 @@
   height: 50px;
   border-radius: 30px;
 }
+@media screen and (max-width:500px) {
+  .carousel-indicators {
+    margin-bottom: 3px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .carousel-indicators [data-bs-target] {
   width: 8px;

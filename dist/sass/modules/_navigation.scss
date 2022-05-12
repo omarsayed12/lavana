@@ -53,36 +53,36 @@
     }
     input ~ ul{
       @extend %position-visabilty-opacity;
-      left: -20px;
+      left: -15px;
     }
     input:checked ~ ul{
       @extend %position-opacity-checked;
-      left: -20px;
+      left: -15px;
     }
   }
   }
   .lang-name {
-  padding: 2px 20px;
-  &:nth-of-type(1) {
-    border-bottom: 1px solid $light-gray;
-  }
-  &:hover {
-    background-color: $main-color;
-    color: $white-color;
-    @include transisionElement(all .9s !important) ;
-  }
+    padding: 5px 28px;
+    &:nth-of-type(1) {
+      border-bottom: 1px solid $light-gray;
+    }
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+      @include transisionElement(all .9s !important) ;
+   }
   }
   .search {
-  position: relative;
-  width: 88%;
-  max-width: 100%;
-  height:56px;
-  border-radius:50px;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
-              0px 4px 16px rgba(51, 51, 51, 0.08);
+    position: relative;
+    width: 88%;
+    max-width: 100%;
+    height:56px;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.06),
+              0px 4px 16px rgba(51, 51, 51, 0.06);
   input {
     border: 0;
     border-radius:50px;
@@ -128,7 +128,9 @@
   }
   }
 }
-
+.nav-mobile {
+  margin: 15px 0;
+}
 nav {
   background-color: $main-color;
   .nav-link {
