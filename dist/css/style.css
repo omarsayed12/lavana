@@ -778,7 +778,7 @@ dropdown input {
   -o-transition: transform 0.6s;
   -ms-transition: transform 0.6s;
   transition: transform 0.6s;
-  max-width: 35px;
+  max-width: 28px;
 }
 .product-option a img:hover {
   -webkit-transform: scale(1.08);
@@ -888,6 +888,11 @@ dropdown input {
 @media screen and (max-width: 991px) {
   .superProduct-content {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 372px) and (max-width: 575px) {
+  .superProduct-content {
+    border-radius: 92px 0 0;
   }
 }
 

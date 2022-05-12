@@ -443,7 +443,7 @@
     @extend %product-select-option;
     img {
       @include transisionElement(transform .6s);
-      max-width: 35px;
+      max-width: 28px;
     }
     img:hover {
       @include transformElment(scale(1.08))
@@ -562,6 +562,9 @@
   }
   @media screen and (max-width: 991px) {
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 372px) and (max-width: 575px) {
+    border-radius: 92px 0 0;
   }
 }
 
