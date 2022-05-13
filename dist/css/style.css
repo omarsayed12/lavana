@@ -64,20 +64,18 @@ nav .login p, nav .fav p, nav .cart p, nav .sections .nav-link {
   padding: 8px;
 }
 
-.brands .brands-title, .needPproduct-heading, .reamdan-product .ramadanOffers-title, .super-product .superProduct-title, .offers .ramdan-offers .ramadanOffers-title {
-  border-radius: 50px 0px;
+.brands .brands-title, .needPproduct-heading, .reamdan-product .ramadanOffers-title, .super-product .superProduct-title, .ramadanOffers-title .ramadanTitle-content {
   color: #FFFFFF;
   text-align: center;
   padding: 8px 0;
-  width: 347px;
   position: relative;
   font-size: 24px;
   font-weight: 700;
 }
-.brands .brands-title::before, .needPproduct-heading::before, .reamdan-product .ramadanOffers-title::before, .super-product .superProduct-title::before, .offers .ramdan-offers .ramadanOffers-title::before {
+.brands .brands-title::after, .needPproduct-heading::after, .reamdan-product .ramadanOffers-title::after, .super-product .superProduct-title::after, .ramadanOffers-title .ramadanTitle-content::after {
   content: "";
   position: absolute;
-  left: 30px;
+  top: 2px;
   background: url("../imgs/Vector.png") center no-repeat;
   height: 40px;
   width: 40px;
@@ -301,6 +299,40 @@ dropdown input {
   height: 8px;
 }
 
+.ramadanOffers-title {
+  margin-bottom: 5px;
+  min-width: 299px;
+  background-color: #364B70;
+  border-radius: 50px 0px;
+}
+.ramadanOffers-title .ramadanTitle-content {
+  width: 260px;
+}
+@media screen and (max-width: 500px) {
+  .ramadanOffers-title .ramadanTitle-content {
+    width: 120px;
+    font-size: 9.82133px;
+  }
+  .ramadanOffers-title .ramadanTitle-content::after {
+    height: 25px;
+    width: 14px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 574.97px) {
+  .ramadanOffers-title .ramadanTitle-content {
+    margin-bottom: 15px;
+  }
+  .ramadanOffers-title .ramadanTitle-content::before {
+    left: 4px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ramadanOffers-title {
+    min-width: 142px;
+  }
+}
+
 .slick-slide img {
   margin: auto;
 }
@@ -359,44 +391,15 @@ dropdown input {
     padding: 6px;
   }
 }
-@media screen and (max-width: 574.97px) {
-  .offers .ramdan-offers {
-    flex-direction: column;
-    align-items: center !important;
-  }
-}
-.offers .ramdan-offers .ramadanOffers-title {
-  background-color: #364B70;
-}
-@media screen and (min-width: 574.98px) and (max-width: 767.98px) {
-  .offers .ramdan-offers .ramadanOffers-title {
-    width: 312px;
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 574.97px) {
-  .offers .ramdan-offers .ramadanOffers-title {
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  .offers .ramdan-offers .ramadanOffers-title::before {
-    left: 4px;
-  }
-}
-@media screen and (max-width: 336.97px) {
-  .offers .ramdan-offers .ramadanOffers-title::before {
-    left: 10px;
-  }
-}
-.offers .ramdan-offers .offers-days .days {
+.offers .offers-days .days {
   text-align: center;
 }
-.offers .ramdan-offers .offers-days .days p {
+.offers .offers-days .days p {
   color: #FFFFFF;
   background-color: #364B70;
+  box-shadow: 0px 5.58025px 5.58025px rgba(0, 0, 0, 0.25);
   width: 58.59px;
   height: 48.83px;
-  box-shadow: 0px 5.58025px 5.58025px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,31 +408,25 @@ dropdown input {
   line-height: 22px;
   text-align: center;
 }
-@media screen and (max-width: 425.98px) {
-  .offers .ramdan-offers .offers-days .days p {
-    width: 40.59px;
-    height: 40.83px;
+@media screen and (max-width: 500px) {
+  .offers .offers-days .days p {
+    width: 18.95px;
+    height: 15.79px;
+    font-size: 10.8267px;
   }
 }
-@media screen and (min-width: 574.98px) and (max-width: 767.98px) {
-  .offers .ramdan-offers .offers-days .days p {
-    width: 40.59px;
-    height: 38.83px;
-    size: 33.45815px;
-  }
-}
-.offers .ramdan-offers .offers-days .days span {
+.offers .offers-days .days span {
   color: #364B70;
+  line-height: 22px;
   font-size: 19.5309px;
   font-weight: 400;
-  line-height: 22px;
 }
-@media screen and (min-width: 574.98px) and (max-width: 767.98px) {
-  .offers .ramdan-offers .offers-days .days span {
-    font-size: 13px;
+@media screen and (max-width: 500px) {
+  .offers .offers-days .days span {
+    font-size: 6.31555px;
   }
 }
-.offers .ramdan-offers .offers-days .dot {
+.offers .dot {
   color: #364B70;
   color: #364B70;
   line-height: 39px;
@@ -437,48 +434,45 @@ dropdown input {
   font-size: 50.2222px;
   font-weight: 400;
 }
-@media screen and (max-width: 425px) {
-  .offers .ramdan-offers .offers-days .dot {
-    font-size: 30px;
+@media screen and (max-width: 500px) {
+  .offers .dot {
+    font-size: 16.24px;
+    font-size: 16.24px;
+    line-height: 11px;
   }
 }
-@media screen and (min-width: 574.98px) and (max-width: 767.98px) {
-  .offers .ramdan-offers .offers-days .dot {
-    font-size: 30.5309px;
-    margin: 0 5px;
-  }
-}
-.offers .special-offers {
+
+.special-offers {
   text-align: center;
 }
-.offers .special-offers h2 {
+.special-offers h2 {
   color: #364B70;
   line-height: 24px;
   font-size: 28px;
   font-weight: 700;
 }
 @media screen and (max-width: 572.98px) {
-  .offers .special-offers h2 {
+  .special-offers h2 {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 573px) and (max-width: 767.98px) {
-  .offers .special-offers h2 {
+  .special-offers h2 {
     size: 20px;
   }
 }
-.offers .special-offers .best-descount {
+.special-offers .best-descount {
   color: #B92728;
   line-height: 24px;
   padding: 21px 0 26px;
   font-size: 36px;
   font-weight: 700;
 }
-.offers .special-offers .best-descount span {
+.special-offers .best-descount span {
   color: #364B70;
 }
 @media screen and (max-width: 572.98px) {
-  .offers .special-offers .best-descount {
+  .special-offers .best-descount {
     font-size: 17px;
     line-height: 17px;
     font-weight: 700;
@@ -486,24 +480,24 @@ dropdown input {
   }
 }
 @media screen and (min-width: 573px) and (max-width: 767.98px) {
-  .offers .special-offers .best-descount {
+  .special-offers .best-descount {
     font-size: 30px;
     line-height: 38px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .offers .special-offers .best-descount {
+  .special-offers .best-descount {
     font-size: 47px;
     line-height: 55px;
   }
 }
-.offers .special-offers .bestDescount-container {
+.special-offers .bestDescount-container {
   background-color: #FFFFFF;
   border-radius: 50px;
   padding: 5px;
   border: 2px #B92728 dashed;
 }
-.offers .special-offers .bestDescount-container .bestDescount-heading {
+.special-offers .bestDescount-container .bestDescount-heading {
   background-color: #B92728;
   border-radius: 50px;
   padding: 10px;
@@ -512,23 +506,24 @@ dropdown input {
   color: #FFFFFF;
 }
 @media screen and (min-width: 573px) and (max-width: 767.98px) {
-  .offers .special-offers .bestDescount-container .bestDescount-heading {
+  .special-offers .bestDescount-container .bestDescount-heading {
     font-size: 28px;
   }
 }
 @media screen and (max-width: 572.98px) {
-  .offers .special-offers .bestDescount-container .bestDescount-heading {
+  .special-offers .bestDescount-container .bestDescount-heading {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .offers .special-offers .bestDescount-container .bestDescount-heading {
+  .special-offers .bestDescount-container .bestDescount-heading {
     font-size: 30px;
     line-height: 55px;
   }
 }
+
 @media screen and (max-width: 1024px) {
-  .offers .offerMedia {
+  .offerMedia {
     max-width: 100%;
   }
 }

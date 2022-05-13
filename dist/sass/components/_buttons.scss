@@ -1,0 +1,29 @@
+.ramadanOffers-title {
+   margin-bottom: 5px;
+   min-width: 299px;
+   background-color: $light-blue;
+   border-radius: 50px 0px;
+   .ramadanTitle-content{
+      @extend %ramadan-offers-style;
+      width:  260px;
+      @media screen and (max-width: 500px) {
+         width: 120px;
+         font-size: 9.82133px;;
+         &::after {
+            height: 25px;
+            width: 14px;
+            background-size: contain;
+         }
+      }
+      @media screen and (max-width: 574.97px){
+      margin-bottom: 15px;
+      // width: 100%;
+         &::before {
+            left: 4px;
+         }
+      }
+   }
+   @media screen and (max-width: 500px) {
+      min-width: 142px;
+   }
+}
