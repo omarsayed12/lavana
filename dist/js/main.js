@@ -13,7 +13,7 @@ $('.autoplay').slick({
         slidesToShow: 12,
         slidesToScroll: 1,
         arrows: false,
-        dots: false
+        dots: true
       }
     },
       {
@@ -78,7 +78,8 @@ $('.offerDays-slide').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
-            dots: false
+            dots: true,
+            autoplay: true,
         }
     },
         {
@@ -138,7 +139,7 @@ $('.offer-days').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             arrows: false,
-            dots: false
+            dots: true
         }
     },
         {
@@ -188,7 +189,7 @@ $('.productDiscount-content').slick({
             slidesToShow: 9,
             slidesToScroll: 1,
             arrows: false,
-            dots: false
+            dots: true
         }
     },{
       breakpoint: 1200,
@@ -196,7 +197,7 @@ $('.productDiscount-content').slick({
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows: false,
-        dots: false
+        dots: true
       }
     },
       {

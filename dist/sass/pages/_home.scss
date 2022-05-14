@@ -100,7 +100,7 @@
     }
     @media screen and (max-width: 500px) {
       font-size: 16.24px;
-      line-height: 11px;
+      line-height: 16px;
       margin: 0 3px;
     }
     @media screen and (min-width: 500.98px) and (max-width:768px){
@@ -199,6 +199,7 @@
 }
 
 .offer-productX {
+
   @media screen and (max-width:693px){
     .offer-contenD {
       flex-direction: column-reverse;
@@ -233,6 +234,12 @@
           }
         }
       }
+    }
+  }
+  .offer-container {
+    @media screen and (min-width:1200px) {
+      padding-right:40px;
+      padding-left: 40px;
     }
   }
 }
@@ -287,7 +294,7 @@
       @extend %product-select-option;
       img {
         @include transisionElement(transform .6s);
-        max-width: 35px;
+        max-width: 28px;
       }
       img:hover {
         @include transformElment(scale(1.08))
@@ -384,20 +391,21 @@
     }
   }
 
-  .superProduct-content {
-    border: 0.8px solid #C4C4C4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 50px 0px;
-    @include transisionElement(box-shadow .5s ease);
-    &:hover {
-      box-shadow: 2px 4px 5px rgb(0 0 0 / 25%)
-    }
-    .superProduct-img {
-      img {
-        max-width: 100%;
-      }
-    }
-  }
+  // .superProduct-content {
+  //   border: 0.8px solid #C4C4C4;
+  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  //   border-radius: 50px 0px;
+  //   overflow: hidden;
+  //   @include transisionElement(box-shadow .5s ease);
+  //   &:hover {
+  //     box-shadow: 2px 4px 5px rgb(0 0 0 / 25%)
+  //   }
+  //   .superProduct-img {
+  //     img {
+  //       max-width: 100%;
+  //     }
+  //   }
+  // }
 
   .superProduct-details {
     text-align: center;
@@ -515,13 +523,23 @@
 //   }
 // }
 
+.needProduct-container {
+  @media screen and (min-width: 1200px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 .superProduct-content {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 56px 0 0;
-  @include transisionElement(box-shadow .5s ease);
+  border-radius: 56px 0 56px;
+  overflow: hidden;
+  @include transisionElement(all .5s  ease-in-out);
   margin: 5px;
   &:hover {
-    box-shadow: 2px 4px 5px rgb(0 0 0 / 40%)
+    box-shadow: 2px 4px 5px rgb(0 0 0 / 40%);
+    transform: translate(1px, -6px);
+    transform: scale3d(1.03, 1.03, 1.03);
   }
   .superProduct-img {
     img {
@@ -612,6 +630,12 @@
 .fashonContent-commom {
   border: 1px solid #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  @include transisionElement(all 0.5s ease-in-out);
+  &:hover {
+    box-shadow: 2px 4px 5px rgb(0 0 0 / 40%);
+    transform: scale3d(1.03, 1.03, 1.03);
+    color: $main-color;
+  }
 }
 .discountHeading-common {
   a {
@@ -640,6 +664,7 @@
   }
 }
 .womenFashion-offers {
+  padding: 0 15px;
   .container {
     @media screen and (max-width:488px) {
       flex-direction: column;
@@ -664,6 +689,7 @@
 }
 
 .manFashion-offers {
+  padding: 0 15px;
   .container {
     @media screen and (max-width:488px) {
       flex-direction: column;

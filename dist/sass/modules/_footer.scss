@@ -12,6 +12,12 @@ footer {
       .contact-social {
          a {
           margin: 0 8px;
+          img {
+            @include transisionElement(all .4s);
+            &:hover {
+              @include transformElment(scale(1.1));
+            }
+          }
         }
       }
       .footerDesktop-container {
@@ -41,12 +47,27 @@ footer {
         list-style: none;
         padding: 10px 0;
           a {
-          font: {
-            size: 18px;
-            weight: 500;
-          }
-          line-height: 24px;
-          color: #000000;
+            @include transisionElement(all .2s ease-in-out);
+            font: {
+              size: 18px;
+              weight: 500;
+            }
+            line-height: 24px;
+            color: #000000;
+            &:hover {
+              color: $main-color;
+             padding-right: 8px;
+            }
+        }
+      }
+    }
+    .account-conatainer {
+      li {
+        img{
+          @include transisionElement(all .5s);
+        }
+        &:hover img{
+          @include transformElment(scale(1.2));
         }
       }
     }
