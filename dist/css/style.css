@@ -686,12 +686,12 @@ dropdown input {
   .offer-productX .offer-contenD .offerContent-product {
     width: 100%;
     background-color: #F1F3F4;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     margin-bottom: 22px;
   }
   .offer-productX .offer-contenD .offerContent-product img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
   }
 }
 @media screen and (max-width: 693px) and (max-width: 563px) {
@@ -704,12 +704,12 @@ dropdown input {
   .offer-productX .offerContentS .offerContent-product {
     background-color: #F1F3F4;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     margin-bottom: 22px;
   }
   .offer-productX .offerContentS .offerContent-product img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
   }
 }
 
