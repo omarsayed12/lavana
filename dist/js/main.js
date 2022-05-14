@@ -124,9 +124,18 @@ $('.offer-days').slick({
     mobileFirst: true,
     arrows: false,
     responsive: [{
-        breakpoint: 1200,
+        breakpoint: 1450,
         settings: {
             slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false
+        }
+    },
+        {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 5,
             slidesToScroll: 1,
             arrows: false,
             dots: false

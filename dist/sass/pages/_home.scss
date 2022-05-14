@@ -16,31 +16,32 @@
       @extend %offer-content-style;
       a {
         @extend %offer-style;
+        @media screen and (max-width: 372.98px) {
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
       }
       @media screen and (max-width: 1399.98px){
         margin: 10px 0;
       }
       @media screen and (max-width: 375px){
         flex-direction: column-reverse;
-        .offerContent-product {
+        .offer-dis {
           width: 100%;
+          background-color: #F1F3F4;
+          border-radius: 25px 25px 0 0;
           img{
             width: 100%;
+            border-radius: 25px 25px 0 0;
           }
         }
       }
       @media screen and (max-width: 375px){
         border-radius: 33px 33px 20px 20px;
-        padding: 6px;
+        padding: 7px;
       }
     }
   }
-  // .ramdan-offers {
-  //   // padding-top: 50px;
-  //     @media screen and (max-width: 574.97px){
-  //       flex-direction: column;
-  //       align-items: center !important;
-  //   }
   .offers-days {
     .days {
       text-align: center;
@@ -53,6 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: auto !important;
         font: {
           size: 33.45815px;
           weight: 400;
@@ -62,8 +64,13 @@
 
         @media screen and (max-width: 500px) {
           width: 18.95px;
-          height: 15.79px;
+          height: 18.95px;
           font-size: 10.8267px;
+        }
+        @media screen and (min-width: 500.98px) and (max-width:768px){
+          width: 30.95px;
+          height: 29.95px;
+          font-size: 18.8267px;
         }
       }
       span {
@@ -74,7 +81,10 @@
           weight: 400;
         }
         @media screen and (max-width: 500px) {
-          font-size: 6.31555px;
+          font-size: 7.31555px;
+        }
+        @media screen and (min-width: 500.98px) and (max-width:768px){
+          font-size: 15px;
         }
       }
     }
@@ -90,8 +100,13 @@
     }
     @media screen and (max-width: 500px) {
       font-size: 16.24px;
-      font-size: 16.24px;
       line-height: 11px;
+      margin: 0 3px;
+    }
+    @media screen and (min-width: 500.98px) and (max-width:768px){
+      font-size: 20px;
+      line-height: 29px;
+      font-weight: 600;
     }
   }
 }
@@ -174,15 +189,54 @@
     }
   }
 .offer-product {
-  background: rgba(121, 136, 151, 0.1);;
+  background: rgba(121, 136, 151, 0.1);
   padding: 35px 17px;
   .offer-content {
-    bac
     a {
       @extend %offer-style;
     }
   }
 }
+
+.offer-productX {
+  @media screen and (max-width:693px){
+    .offer-contenD {
+      flex-direction: column-reverse;
+      .offerContent-desc {
+        text-align: center;
+      }
+      .offerContent-product {
+        width: 100%;
+        background-color: #F1F3F4;
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 22px;
+        img {
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+        }
+      }
+    }
+    .offerContentS {
+      @media screen and (max-width: 563px) {
+      flex-direction: column-reverse;
+      .offerContent-desc {
+        text-align: center;
+      }
+      .offerContent-product {
+        background-color: #F1F3F4;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 22px;
+          img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 // start day-offers offer
 .day-offers {
     background-color: #FFF6F2;
@@ -250,7 +304,7 @@
       display: flex;
       align-items: center;
       img {
-        max-width: 20px;
+        max-width: 18px;
       }
     }
 
@@ -321,10 +375,12 @@
   .super-product {
     // padding: 55px 0 25px;
     .superProduct-title {
-      @extend %ramadan-offers-style;
-      width: 454px;
-      background-color: $light-blue;
+
+
       margin: 0 auto 50px;
+      .ramadanOffers-title .ramadanTitle-content {
+        width: 416px;
+      }
     }
   }
 
@@ -376,11 +432,7 @@
 }
 // start global sections offers
 .offersCart-container {
-  // padding: 0 15px;
   .productOffer-content {
-    border: 1px solid #E5E9F2;
-    margin: 15px 3px;
-    @include transisionElement(all .5s);
     &:hover {
       box-shadow: -1px 4px 11px 0px hwb(0deg 0% 100% / 47%);
       @include transformElment(scale(1.001))
@@ -391,135 +443,77 @@
     }
   }
 }
-.product-details {
-  background-color: $white-color;
-  padding: 12px;
-  position: relative;
-  z-index:222 ;
-}
-.product-option {
-  position: relative;
-  z-index:111 ;
-  margin-top: -64px;
-  background-color: #ecececb0;
-  visibility: hidden;
-  @include transisionElement(all .5s);
-  @include transformElment(translate(0px, 64px));
-}
-.product-img {
-  a {
-    width: 110px;
-  }
-}
-.product-option {
-  @extend %product-select;
-  a {
-    @extend %product-select-option;
-    img {
-      @include transisionElement(transform .6s);
-      max-width: 28px;
-    }
-    img:hover {
-      @include transformElment(scale(1.08))
-    }
-  }
-}
 
-.product-desc {
-    @extend %product-details-desc;
-    font-size: 13px;
-    line-height: 10px;
-}
-.product-rate
-{
-  .rate {
-    display: flex;
-    align-items: center;
-    img {
-      max-width: 15px;
+.prodictDetails-media {
+  .product-desc {
+      @extend %product-details-desc;
+      font-size: 13px;
+      line-height: 10px;
+  }
+  .product-rate {
+    .rate {
+      img {
+        max-width: 15px;
+      }
+    }
+
+    .rate-num {
+        span {
+          font: {
+            size: 10px;
+            weight: 500;
+        }
+      }
     }
   }
 
-  .rate-num {
-    padding-right: 10px;
-      span {
-        color: #515151;
+  .option {
+    .fast-charging {
+      a {
         font: {
           size: 10px;
-          weight: 500;
+        };
       }
     }
-  }
-}
 
-.option {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  .fast-charging {
-    margin: 0;
-    a {
-      font: {
-        size: 10px;
-        weight: 700;
-      };
-      line-height: 24px;
-      width: 103px;
-      height: 25px;
-      padding: 5px 12px;
-      background: $main-color;
-      color: $white-color;
-      border-radius: 50px 0px;
-    }
-  }
-
-  .product-price {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    .main-price {
-      margin: 0;
-      a {
-        font: {
-          size: 11px;
-          weight: 700
+    .product-price {
+      .main-price {
+        a {
+          font: {
+            size: 11px;
+          }
+          line-height: 20px;
         }
-        line-height: 20px;
-        text-decoration-line: line-through;
-        color: $primary-dark;
       }
-    }
-    .dicountAfte-price {
-      padding-right: 12px;
-      margin: 0;
-      a {
-        font: {
-          size: 15;
-          weight: 700
+      .dicountAfte-price {
+        padding-right: 12px;
+        margin: 0;
+        a {
+          font: {
+            size: 15;
+            weight: 700
+          }
+          line-height: 24px;
+          color: $main-color;
         }
-        line-height: 24px;
-        color: $main-color;
       }
     }
   }
 }
-
-.super-product {
-  // padding: 50px 0;
-  .superProduct-title {
-    @extend %ramadan-offers-style;
-    width: 454px;
-    background-color: $light-blue;
-    margin: 0 auto 50px;
-    @media screen and (max-width: 575px) {
-      width: 100%;
-      font-size: 19px;
-      &::before {
-        display: none;
-      }
-    }
-  }
-}
+// .super-product {
+//   .superProduct-title {
+//     width: 454px;
+//     background-color: $light-blue;
+//     margin: 0 auto 50px;
+//     @media screen and (max-width: 575px) {
+//       width: 100%;
+//       font-size: 19px;
+//       // &::before {
+//       //   display: none;
+//       // }
+//     }
+//   }
+// }
 
 .superProduct-content {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
@@ -575,8 +569,8 @@
   }
 }
 .reamdan-product {
-  // padding: 25px 0 25px;
   text-align: center;
+  }
   .reamdanProduct-img img {
     max-width: 100%;
     @include transisionElement(transform .5s);
@@ -594,33 +588,11 @@
       color: $light-blue;
     }
   }
-}
 
-.reamdan-product {
+.ramadaProduct-content {
   .ramadanOffers-title {
-    @extend %ramadan-offers-style;
     background-color: $main-color;
     margin: auto;
-    width: 390px;
-    padding: 12px 0;
-    @media screen and (max-width:425px){
-      width: 260px;
-      font-size: 14px;
-        &::before {
-          top: 0;
-          left: 13px;
-        }
-    }
-  }
-
-    // @media screen and (max-width:425px) {
-    //   // max-width: 100%;
-    //   font-size: 18px;
-    //   padding-left: 20px;
-    //   &::before {
-    //     top: 0;
-    //   }
-    // }
   }
   .ramadanProduct-container {
     a {
@@ -635,7 +607,7 @@
       }
     }
   }
-
+}
 
 .fashonContent-commom {
   border: 1px solid #C4C4C4;
@@ -725,16 +697,6 @@
           font-size: 24px;
         }
       }
-      p {
-        a {
-          font: {
-            size: 18px;
-            weight: 400;
-          }
-          color: $white-color;
-          line-height: 16px;
-        }
-      }
     }
 
     .shop-now {
@@ -742,6 +704,16 @@
         background-color: $white-color;
         color: $main-color;
       }
+    }
+  }
+  p {
+    a {
+      font: {
+        size: 18px;
+        weight: 400;
+      }
+      color: $white-color;
+      line-height: 16px;
     }
   }
   .productDiscount-content {
@@ -777,54 +749,54 @@
 
 .needPproduct-heading {
     background-color: $light-blue;
-    color: $white-color;
-    display: inline-block;
-    width: 564px;
-    padding: 12px 0;
-    @extend %ramadan-offers-style;
+    // color: $white-color;
+    // display: inline-block;
+    // width: 564px;
+    // padding: 12px 0;
+    // @extend %ramadan-offers-style;
 }
 .needHeading-ramadan {
   background-color: $main-color;
 }
-.need-product {
+// .need-product {
   // background: rgba(54, 75, 112, 0.1);
   // margin: 45px 0;
-  .container {
-    @media screen and (max-width:487.98px) {
-      flex-direction: column;
-      .offerHeading-common {
-        width: 100%;
-         font-size: 13px;
-         &::before {
-          top: 0;
-          left: 15px;
-          background-size: 50%;
-         }
-      }
-    }
-  }
-  @media screen and (max-width:768px) {
-    .offerHeading-common {
-      width: 67%;
-       font-size: 15px;
-       &::before {
-        top: 0;
-        left: 15px;
-        background-size: 50%;
-       }
-    }
-  }
-  @media screen and (max-width:991px) {
-    .offerHeading-common {
-      width: 63%;
-       font-size: 17px;
-       &::before {
-        top: 0;
-        // left: 15px;
-        background-size: 50%;
-       }
-    }
-  }
+  // .container {
+  //   @media screen and (max-width:487.98px) {
+  //     flex-direction: column;
+  //     .offerHeading-common {
+  //       width: 100%;
+  //        font-size: 13px;
+  //        &::before {
+  //         top: 0;
+  //         left: 15px;
+  //         background-size: 50%;
+  //        }
+  //     }
+  //   }
+  // }
+  // @media screen and (max-width:768px) {
+  //   .offerHeading-common {
+  //     width: 67%;
+  //      font-size: 15px;
+  //      &::before {
+  //       top: 0;
+  //       left: 15px;
+  //       background-size: 50%;
+  //      }
+  //   }
+  // }
+  // @media screen and (max-width:991px) {
+  //   .offerHeading-common {
+  //     width: 63%;
+  //      font-size: 17px;
+  //      &::before {
+  //       top: 0;
+  //       // left: 15px;
+  //       background-size: 50%;
+  //      }
+  //   }
+  // }
   .shop-now {
     a {
       background-color: $light-blue;
@@ -833,10 +805,10 @@
       background-color: $main-color;
     }
   }
-  .needProduct-container {
-    // padding: 50px 0;
-  }
-}
+//   .needProduct-container {
+//     // padding: 50px 0;
+//   }
+// }
 // start offer-product
 .offer-product {
   .offer-container {
@@ -863,19 +835,8 @@
   padding: 40px 0;
   background: rgba(185, 39, 40, 0.1);
   .brands-title {
-    @extend %ramadan-offers-style;
     background-color: $main-color;
-    width: 400px;
     margin:0 auto 15px;
-    @media screen and (max-width:425px) {
-      max-width: 100%;
-      font-size: 18px;
-      padding-left: 20px;
-      &::before {
-        top: 0;
-      }
-    }
-
   }
 }
 
@@ -890,9 +851,9 @@
     justify-content: center;
   }
   .helpingCenter-container {
-    @media screen and (max-width: 768px) {
-      padding: 30px;
-    }
+    // @media screen and (max-width: 768px) {
+    //   padding: 30px;
+    // }
     .helpingCenter-desc {
       a {
         font: {
@@ -902,8 +863,23 @@
         line-height: 20px;
         color:$white-color;
         @media screen and (max-width: 470.98px) {
+          font-size: 18px;
+          text-align: center !important;
+          font-weight: 700;
+          line-height: 12px;
+        }
+        @media screen and (min-width: 471px) and (max-width:991px) {}
+      }
+
+      p{
+        @media screen and (max-width: 470.98px) {
           font-size: 20px;
+          text-align: center !important;
+        }
+        @media screen and (min-width: 471px) and (max-width:1199.98px) {
           display: inline-block;
+          text-align: center;
+          padding-top: 15px;
         }
       }
     }

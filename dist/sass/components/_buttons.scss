@@ -1,29 +1,132 @@
 .ramadanOffers-title {
    margin-bottom: 5px;
-   min-width: 299px;
+   width: 347px;
    background-color: $light-blue;
    border-radius: 50px 0px;
    .ramadanTitle-content{
       @extend %ramadan-offers-style;
-      width:  260px;
+      width:  306px;
       @media screen and (max-width: 500px) {
          width: 120px;
          font-size: 9.82133px;;
+         padding: 10px 0;
          &::after {
-            height: 25px;
-            width: 14px;
+            height: 16px;
+            width: 16px;
             background-size: contain;
+            top: 8px;
          }
       }
-      @media screen and (max-width: 574.97px){
-      margin-bottom: 15px;
-      // width: 100%;
-         &::before {
+      @media screen and (min-width: 500.98px) and (max-width:768px){
+         width: 188px;
+         font-size: 15px;
+         &::after {
             left: 4px;
+            height: 29px;
+            width: 29px;
+            background-size: contain;
          }
       }
    }
    @media screen and (max-width: 500px) {
-      min-width: 142px;
+      width: 150px;
+   }
+   @media screen and (min-width: 500.98px) and (max-width:768px){
+      width: 216px;
    }
 }
+
+.superProduct-title {
+   width: 470px;
+   background-color: $light-blue;
+   border-radius: 50px 0px;
+   .supeProduct-heading {
+      @extend %ramadan-offers-style;
+      width: 435px;
+      @media screen and (max-width: 500px) {
+         width: 258px;
+         font-size: 15px;
+         &::after {
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+         }
+      }
+   }
+   @media screen and (max-width: 500px) {
+      width: 293px;
+   }
+}
+
+.needPproduct-heading {
+   width: 560px;
+   background-color: $light-blue;
+   border-radius: 50px 0px;
+   @media screen and (min-width:768px) and (max-width:991px) {
+        width: 395px;
+   }
+
+   @media screen and (min-width:319px) and (max-width:767.98px) {
+      width: 300px;
+   }
+   .supeProduct-heading {
+      @extend %ramadan-offers-style;
+      width: 526px;
+      @media screen and (min-width:319px) and (max-width:767.98px) {
+         width: 280px;
+         font-size: 12px;
+         &::after {
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+         }
+      }
+      @media screen and (min-width:768px) and (max-width:991px) {
+         width: 350px;
+         font-size: 17px;
+      }
+   }
+}
+
+.needProduct-bg  {
+   .container {
+      @media screen and (min-width:319px) and (max-width:500px) {
+         width: 250px;
+         flex-direction: column;
+      }
+
+   }
+}
+.prod-gb {
+   background-color: $main-color !important;
+}
+
+.superProductRam-title {
+   @media screen and (min-width:319px) and (max-width:500px) {
+      width: 250px;
+   }
+   @media screen and (min-width:500.98px) and (max-width:767.98px) {
+      width: 330px;
+   }
+   .superProductRam-heading {
+      @media screen and (min-width:319px) and (max-width:500px) {
+         width: 235px;
+         font-size: 15px;
+         &::after {
+            width: 25px;
+            height: 23px;
+         }
+      }
+      @media screen and (min-width:500.98px) and (max-width:767.98px) {
+         width: 315px;
+         font-size: 20px;
+         &::after {
+            left: 25px;
+            height: 39px;
+            width: 35px;
+         }
+      }
+   }
+}
+.superProductRam-title{}
+.superProductRam-heading{}
