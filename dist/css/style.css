@@ -274,9 +274,9 @@ dropdown input {
   border-radius: 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 318px) {
   .carousel-indicators {
-    margin-bottom: 3px;
+    margin-bottom: -5px;
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
